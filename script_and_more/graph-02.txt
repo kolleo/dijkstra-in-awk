@@ -1,0 +1,11 @@
+# edge definitions of a directed weighted graph
+# fromVertex toVertex weight
+b a 79
+c a 27
+d a 21
+d b 14
+d c 68
+c e 15
+d e 18
+d f 11
+e f 84

@@ -1,0 +1,13 @@
+PURPOSE: Calculates shortest path lengths according to Dijkstra's algorithm.
+
+USAGE:   awk -v u=<start> [-v t=<end>] [-v dir=<direction>] -f dijkstra.awk <file>
+         awk -f dijkstra.awk help
+
+         file       input file containing graph specification, i.e. definition of edges
+         start      label of starting vertex
+         end        label of ending vertex; if not given, the shortest lengths for ALL vertices are calculated
+         direction  U|D (default U); file defines an Undirected or Directed graph
+
+EXAMPLE: awk -v u=a -v t=g -v dir=D -f dijkstra.awk graphdef.txt
+
+         starting (ending) vertex is "a"("g"), file "graphdef.txt" specifies a directed graph

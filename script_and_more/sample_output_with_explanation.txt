@@ -1,0 +1,27 @@
+----- INPUT PARAMETERS -----
+file: graph-01.txt
+direction type: undirected
+starting vertex: d
+ending vertex: (not specified) - calculation for all vertices
+----- RESULT -----
+L(a)=50   #length of shortest path from d to a is 50
+L(b)=24   #length of shortest path from d to b is 24
+L(c)=62
+L(d)=0    #length of shortest path from d to itself is by definition 0
+L(e)=72
+L(f)=5
+L(g)=9
+
+----- INPUT PARAMETERS -----
+file: graph-01.txt
+direction type: directed
+starting vertex: d
+ending vertex: (not specified) - calculation for all vertices
+----- RESULT -----
+L(a)=999999   # i.e. starting from d, vertex a is not reachable (999999 stands for 'infinite') 
+L(b)=999999   # i.e. starting from d, vertex b is not reachable
+L(c)=999999
+L(d)=0
+L(e)=999999
+L(f)=5
+L(g)=9
