@@ -94,9 +94,9 @@ function isFinished(v_, t, calcAll) {
 # T - working vertex set
 # L - solution vector
 #---------------------------------------------------------------
-function findVertexWithMinimalWeight(V, T, L) {
+function findVertexWithMinimalWeight(V, T, L,   minVertex) {
+#                                               ^local var !!!!!
 	min = INFINITE
-	minVertex = "" #otherwise, if var is not set in loop, the value of the last invocation of this func will be returned!
 	
 	for (v in V) {
 		if (L[v] < min) {
@@ -181,5 +181,5 @@ function showInputParams() {
 	print "file: " ARGV[1]
 	print "direction type: " (dir=="U"?"undirected":"directed")
 	print "starting vertex: " u
-	print "ending vertex: " (t==""?"(not specified) - calculation for all vertices":t)
+	print "ending vertex: " (t==""?"**unspecified** i.e. calculation for all vertices":t)
 }
