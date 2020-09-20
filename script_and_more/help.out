@@ -6,8 +6,8 @@ USAGE:   awk -v u=<start> [-v t=<end>] [-v dir=<direction>] -f dijkstra.awk <fil
          file       input file containing graph specification, i.e. definition of edges
          start      label of starting vertex
          end        label of ending vertex; if not given, the shortest lengths for ALL vertices are calculated
-         direction  U|D (default U); file defines an Undirected or Directed graph
+         direction  U|D (default U); graph should be regarded as Undirected or Directed
 
 EXAMPLE: awk -v u=a -v t=g -v dir=D -f dijkstra.awk graphdef.txt
 
-         starting (ending) vertex is "a"("g"), file "graphdef.txt" specifies a directed graph
+         starting (ending) vertex is "a"("g"); graph defined by "graphdef.txt" should be regarded as directed

@@ -168,11 +168,11 @@ function showHelp() {
 	print "         file       input file containing graph specification, i.e. definition of edges"
 	print "         start      label of starting vertex"
 	print "         end        label of ending vertex; if not given, the shortest lengths for ALL vertices are calculated"
-	print "         direction  U|D (default U); file defines an Undirected or Directed graph"
+	print "         direction  U|D (default U); graph should be regarded as Undirected or Directed"
 	print ""
 	print "EXAMPLE: awk -v u=a -v t=g -v dir=D -f dijkstra.awk graphdef.txt"
 	print ""
-	print "         starting (ending) vertex is \"a\"(\"g\"), file \"graphdef.txt\" specifies a directed graph"
+	print "         starting (ending) vertex is \"a\"(\"g\"); graph defined by \"graphdef.txt\" should be regarded as directed"
 	print ""
 }
 
